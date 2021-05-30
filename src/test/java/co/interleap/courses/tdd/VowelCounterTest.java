@@ -32,4 +32,10 @@ public class VowelCounterTest {
         int result= vowelCounter.countVowel("hello friends");
         assertEquals(4, result);
     }
+    @Test
+    public void shouldReturnCountWhenBothUpperAndLowerCaseCharactersArePresent(){
+        VowelCounter vowelCounter= new VowelCounter();
+        int result= vowelCounter.countVowel("A Quick broWN FOX JUmped over the LAZY DOG.");
+        assertEquals(12, result);
+    }
 }
