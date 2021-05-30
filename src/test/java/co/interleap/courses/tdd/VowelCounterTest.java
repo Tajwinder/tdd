@@ -25,4 +25,11 @@ public class VowelCounterTest {
         int result= vowelCounter.countVowel("eao");
         assertEquals(3, result);
     }
+
+    @Test
+    public void shouldRetunVowelCountWhenContainsBothVowelsAndConsonents(){
+        VowelCounter vowelCounter= new VowelCounter();
+        int result= vowelCounter.countVowel("hello friends");
+        assertEquals(4, result);
+    }
 }
